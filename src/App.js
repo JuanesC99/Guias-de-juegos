@@ -1769,7 +1769,7 @@ function App() {
         setActiveTab(filtered[0].id);
       }
     }
-  }, [search, games]); // Solo search y games
+  }, [search, activeTab]); // Solo search y activeTab // Solo search y games
 
   const toggleTrophy = (gameId, trophyId) => {
     setCompletedTrophies(prev => ({

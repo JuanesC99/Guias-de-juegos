@@ -1761,10 +1761,15 @@ function App() {
       game.title.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredGames(filtered);
-    if (filtered.length > 0 && !filtered.find(g => g.id === activeTab)) {
-      setActiveTab(filtered[0].id);
+    
+    // Solo actualiza activeTab si es necesario
+    if (filtered.length > 0) {
+      const currentTabExists = filtered.find(g => g.id === activeTab);
+      if (!currentTabExists) {
+        setActiveTab(filtered[0].id);
+      }
     }
-  }, [search]);
+  }, [search, games]); // Solo search y games
 
   const toggleTrophy = (gameId, trophyId) => {
     setCompletedTrophies(prev => ({

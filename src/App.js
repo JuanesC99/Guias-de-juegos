@@ -53,7 +53,7 @@ const games = [
       {
         id: 5,
         name: 'Yharnam, reina pthumeria',
-        type: 'silver',
+        type: 'gold',
         desc: 'Derrota a Yharnam, reina sangrienta del antiguo laberinto.',
         video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         completed: true,
@@ -1596,103 +1596,969 @@ const games = [
       
     ]
   },
-  {
-    id: 'rdr1',
-    title: 'Red Dead Redemption',
-    img: 'rdr1-cover.jpg',
-    description: 'John Marston busca redención en el Oeste americano. Plataforma: PS3/PS4.',
-    totalTrophies: 91,
-    platinum: 1,
-    gold: 2,
-    silver: 17,
-    bronze: 71,
-    trophies: [
-      {
-        id: 1,
-        name: 'Red Dead Redemption (Platino)',
-        type: 'platinum',
-        desc: 'Obtén todos los trofeos.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_RDR1_PLATINO',
-        completed: false,
-        difficulty: 'Muy Difícil'
-      },
-      {
-        id: 2,
-        name: 'How to Tame a Wild Animal (Oro)',
-        type: 'gold',
-        desc: 'Domina el juego al 100%.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_TAME',
-        completed: false,
-        difficulty: 'Difícil'
-      },
-      {
-        id: 3,
-        name: 'Pa-Pa-Pa-Pow! (Plata)',
-        type: 'silver',
-        desc: 'Mata 6 enemigos en Dead Eye.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_PAPA',
-        completed: false,
-        difficulty: 'Media'
-      },
-      {
-        id: 4,
-        name: 'Keep Your Dreams Simple (Bronce)',
-        type: 'bronze',
-        desc: 'Sobrevive 3 días en Beecher\'s Hope.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_SIMPLE',
-        completed: true,
-        difficulty: 'Fácil'
-      }
+    {
+      id: 'rdr1',
+      title: 'Red Dead Redemption',
+      img: 'rdr1-cover.jpg',
+      description: 'John Marston busca redención en el Oeste americano. Plataforma: PS3/PS4.',
+      totalTrophies: 52,
+      platinum: 1,
+      gold: 3,
+      silver: 4,
+      bronze: 44,
+      trophies: [
+        {
+          id: 1,
+          name: 'Leyenda del Oeste',
+          type: 'platinum',
+          desc: '¡Te has convertido en una leyenda del Oeste!',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PLATINUM',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 2,
+          name: 'Redimido',
+          type: 'gold',
+          desc: 'Completa el juego al 100%.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_REDIMIDO',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 3,
+          name: 'Zed ha muerto, cariño',
+          type: 'gold',
+          desc: 'Completa Undead Nightmare al 100%.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ZED',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 4,
+          name: '¿Cuidados o naturaleza?',
+          type: 'gold',
+          desc: 'Completa «Recuerda a mi familia».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_NATURALEZA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 5,
+          name: 'La buena acción del día',
+          type: 'silver',
+          desc: 'Ayuda a 15 personas desconocidas.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_BUENA_ACCION',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 6,
+          name: 'Explorador',
+          type: 'silver',
+          desc: 'Obtén el rango Legendario en cualquier desafío ambiental.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_EXPLORADOR',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 7,
+          name: 'Platos giratorios',
+          type: 'silver',
+          desc: 'Ten todos los territorios a salvo al mismo tiempo en Undead Nightmare.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PLATOS',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 8,
+          name: 'El mundo va bien',
+          type: 'silver',
+          desc: 'Completa «En un caballo pálido».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MUNDO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 9,
+          name: 'Gran apostador',
+          type: 'bronze',
+          desc: 'Gana más de 2000 fichas en una mano de póquer.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_APOSTADOR',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 10,
+          name: 'Sin dados',
+          type: 'bronze',
+          desc: 'Completa una partida al dado mentiroso sin perder ni un solo dado.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DADOS',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 11,
+          name: '¿Granadas de mano?',
+          type: 'bronze',
+          desc: 'Consigue un lanzamiento perfecto en el juego de la herradura.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_GRANADAS',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 12,
+          name: 'Austin dominado',
+          type: 'bronze',
+          desc: 'Completa las guaridas de Twin Rocks, Pike\'s Basin y Gaptooth Breach.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_AUSTIN',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 13,
+          name: 'Espíritus malvados',
+          type: 'bronze',
+          desc: 'Completa las guaridas de Tumbleweed y Tesoro Azul.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ESPIRITUS',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 14,
+          name: 'Instinto asesino',
+          type: 'bronze',
+          desc: 'Completa las guaridas de Fort Mercer y Nosalida.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_INSTINTO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 15,
+          name: 'Peleando por el mundo',
+          type: 'bronze',
+          desc: 'Deja inconsciente a alguien en todas las tabernas del juego.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PELEANDO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 16,
+          name: 'Cosas curiosas en marcha',
+          type: 'bronze',
+          desc: 'Completa una tarea para una persona desconocida.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CURIOSAS',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 17,
+          name: 'El domador indomable',
+          type: 'bronze',
+          desc: 'Doma el saddler de Kentucky, el trotón americano y el mestizo húngaro.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DOMADOR',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 18,
+          name: 'La clemencia se paga',
+          type: 'bronze',
+          desc: 'Captura a un fugitivo vivo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CLEMENCIA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 19,
+          name: 'Gusto exquisito',
+          type: 'bronze',
+          desc: 'Compra un arma rara en una armería.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_GUSTO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 20,
+          name: 'Osando cazar',
+          type: 'bronze',
+          desc: 'Mata y despelleja 18 osos pardos.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CAZAR',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 21,
+          name: '¡Él limpia bien!',
+          type: 'bronze',
+          desc: 'Obtén el traje elegante.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_LIMPIA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 22,
+          name: 'Más de un puñado',
+          type: 'bronze',
+          desc: 'Gana 10,000 $.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PUNADO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 23,
+          name: 'El pistolero',
+          type: 'bronze',
+          desc: 'Mata a cualquier enemigo con un tiro a la cabeza usando el modo de apuntado experto.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PISTOLERO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 24,
+          name: 'Hombre de honor… o deshonor',
+          type: 'bronze',
+          desc: 'Alcanza el rango máximo de fama y el rango máximo o mínimo de honor.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_HONOR',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 25,
+          name: 'Medalla de oro',
+          type: 'bronze',
+          desc: 'Gana una medalla de oro en una misión de combate.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MEDALLA',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 26,
+          name: 'Tras el rastro de De Vaca',
+          type: 'bronze',
+          desc: 'Descubre todas las ubicaciones del mapa.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DEVACA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 27,
+          name: 'Amigos en posiciones elevadas',
+          type: 'bronze',
+          desc: 'Usa una carta de indulto teniendo más de 5000 $ de deuda.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_AMIGOS',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 28,
+          name: 'Acribillándoles',
+          type: 'bronze',
+          desc: 'Mata a 500 enemigos con un arma con soporte en cualquier modo de juego.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ACRIBILLANDO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 29,
+          name: 'Granizo de balas',
+          type: 'bronze',
+          desc: 'Mata a 500 enemigos con cualquier pistola o revólver en cualquier modo de juego.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_GRANIZO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 30,
+          name: 'El arma larga de Marston',
+          type: 'bronze',
+          desc: 'Mata a 500 enemigos con cualquier fusil, arma de repetición o escopeta en cualquier modo de juego.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ARMALARGA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 31,
+          name: 'Diana',
+          type: 'bronze',
+          desc: 'Consigue 250 tiros a la cabeza en cualquier modo de juego.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DIANA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 32,
+          name: 'Selección antinatural',
+          type: 'bronze',
+          desc: 'Mata un animal de cada especie del juego en cualquier modo de juego.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ANTINATURAL',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 33,
+          name: 'Maestro del hacha',
+          type: 'bronze',
+          desc: 'Completa todos los desafíos del tomahawk.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_HACHA',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 34,
+          name: 'Maestro de explosivos',
+          type: 'bronze',
+          desc: 'Completa el desafío del fusil explosivo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_EXPLOSIVOS',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 35,
+          name: 'Mad Marston: guerrero de caminos',
+          type: 'bronze',
+          desc: 'Alcanza el rango 5 en todos los desafíos de Undead Nightmare.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MAD',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 36,
+          name: 'Ese hombre del gobierno',
+          type: 'bronze',
+          desc: 'Completa «Éxodo en EE. UU.».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_GOBIERNO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 37,
+          name: 'Tierra de oportunidades',
+          type: 'bronze',
+          desc: 'Completa «El ataque a Fort Mercer».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_TIERRA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 38,
+          name: 'Hijos de México',
+          type: 'bronze',
+          desc: 'Completa «Las puertas de El Presidio».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MEXICO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 39,
+          name: 'No más labia',
+          type: 'bronze',
+          desc: 'Completa «La hora señalada».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_LABIA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 40,
+          name: 'Un alma salvaje',
+          type: 'bronze',
+          desc: 'Completa «En casa con Dutch».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_SALVAJE',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 41,
+          name: 'Los beneficios de ser civilizado',
+          type: 'bronze',
+          desc: 'Completa «Y la verdad os hará libres».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CIVILIZADO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 42,
+          name: 'En el atardecer',
+          type: 'bronze',
+          desc: 'Completa «El último enemigo que debe ser destruido».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ATARDECER',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 43,
+          name: 'Cobarde',
+          type: 'bronze',
+          desc: 'Coloca a una mujer maniatada en las vías del tren y sé testigo de cómo el tren la mata.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_COBARDE',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 44,
+          name: 'Destino manifiesto',
+          type: 'bronze',
+          desc: 'Mata al último bisonte de Great Plains.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DESTINO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 45,
+          name: 'Espoleado a la victoria',
+          type: 'bronze',
+          desc: 'Completa 20 misiones sin cambiar de caballo en un poste.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ESPOLEADO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 46,
+          name: 'Al sur en un bronco blanco',
+          type: 'bronze',
+          desc: 'Escapa de los comisarios de EE. UU. montado en un mestizo húngaro.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_BRONCO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 47,
+          name: 'La espiral descendente',
+          type: 'bronze',
+          desc: 'Completa la misión de superviviente «Cuentos curiosos de Blackwater».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ESPIRAL',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 48,
+          name: 'Dime con quién andas…',
+          type: 'bronze',
+          desc: 'Completa las misiones de superviviente «Una cura para casi todo» y «Vuelve a tu agujero, amigo».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DIME',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 49,
+          name: 'La danza superiora',
+          type: 'bronze',
+          desc: 'Completa la misión de superviviente «El blues de la madre superiora».',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DANZA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 50,
+          name: 'Para el público',
+          type: 'bronze',
+          desc: 'Encuentra y doma un unicornio.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_UNICORNIO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 51,
+          name: 'Chupa… ¿qué?',
+          type: 'bronze',
+          desc: 'Encuentra y mata un chupacabras.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CHUPA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 52,
+          name: 'Six Years In The Making',
+          type: 'bronze',
+          desc: 'Encuentra y mata un sasquatch.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_SASQUATCH',
+          completed: false,
+          difficulty: 'Media'
+        }
+      
+    
     ]
   },
-  {
-    id: 'rdr2',
-    title: 'Red Dead Redemption 2',
-    img: 'rdr2-cover.jpg',
-    description: 'Arthur Morgan y la banda Van der Linde. Plataformas: PS4/PS5/PC.',
-    totalTrophies: 52,
-    platinum: 1,
-    gold: 3,
-    silver: 4,
-    bronze: 44,
-    trophies: [
-      {
-        id: 1,
-        name: 'Western Legend (Platino)',
-        type: 'platinum',
-        desc: 'Descubre todos los trofeos.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_RDR2_PLATINO',
-        completed: false,
-        difficulty: 'Muy Difícil'
-      },
-      {
-        id: 2,
-        name: 'Best in the West (Oro)',
-        type: 'gold',
-        desc: 'Alcanza el rango máximo en todas las habilidades.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_BESTWEST',
-        completed: false,
-        difficulty: 'Difícil'
-      },
-      {
-        id: 3,
-        name: 'Gold Rush (Plata)',
-        type: 'silver',
-        desc: 'Encuentra oro natural.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_GOLDRUSH',
-        completed: false,
-        difficulty: 'Media'
-      },
-      {
-        id: 4,
-        name: 'Friends With Benefits (Bronce)',
-        type: 'bronze',
-        desc: 'Completa un desafío de bandidos.',
-        video: 'https://www.youtube.com/embed/EXAMPLE_FRIENDS',
-        completed: true,
-        difficulty: 'Fácil'
-      }
-    ]
+    {
+      id: 'rdr2',
+      title: 'Red Dead Redemption 2',
+      img: 'rdr2-cover.jpg',
+      description: 'Arthur Morgan y la banda de Dutch van der Linde en el ocaso del Viejo Oeste. Plataforma: PS4/PS5.',
+      totalTrophies: 52,
+      platinum: 1,
+      gold: 3,
+      silver: 4,
+      bronze: 44,
+      trophies: [
+        {
+          id: 1,
+          name: 'Leyenda del Oeste',
+          type: 'platinum',
+          desc: 'Consigue todos los demás trofeos.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PLATINUM',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 2,
+          name: 'Redención',
+          type: 'gold',
+          desc: 'Completa "Red Dead Redemption".',
+          video: 'https://www.youtube.com/embed/EXAMPLE_REDENCION',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 3,
+          name: 'Verano eterno',
+          type: 'gold',
+          desc: 'Completa el epílogo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_VERANO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 4,
+          name: 'El mejor del Oeste',
+          type: 'gold',
+          desc: 'Completa el juego al 100%.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MEJOR',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 5,
+          name: 'Echar una mano',
+          type: 'silver',
+          desc: 'Completa todas las misiones opcionales de honor del Modo Historia.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MANO',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 6,
+          name: 'Fiebre del oro',
+          type: 'silver',
+          desc: 'Consigue 70 medallas de oro en misiones de la historia.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_FIEBRE',
+          completed: false,
+          difficulty: 'Muy Difícil'
+        },
+        {
+          id: 7,
+          name: 'Objeto de coleccionista',
+          type: 'silver',
+          desc: 'Completa uno de los hilos argumentales de coleccionables.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_COLECCIONISTA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 8,
+          name: 'Infame',
+          type: 'silver',
+          desc: 'Red Dead Online: Llega al nivel 50.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_INFAME',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 9,
+          name: 'De vuelta al lodo',
+          type: 'bronze',
+          desc: 'Completa el capítulo I.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_LODO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 10,
+          name: 'Solo es un rasguño',
+          type: 'bronze',
+          desc: 'Completa "Perseguidos por el pasado".',
+          video: 'https://www.youtube.com/embed/EXAMPLE_RASGU',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 11,
+          name: 'Hacia prados más verdes',
+          type: 'bronze',
+          desc: 'Completa el capítulo II.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PRADOS',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 12,
+          name: 'Zanjando disputas',
+          type: 'bronze',
+          desc: 'Completa el capítulo III.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_DISPUTAS',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 13,
+          name: 'Arrastrado por la corriente',
+          type: 'bronze',
+          desc: 'Completa el capítulo IV.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CORRIENTE',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 14,
+          name: 'Sin traidores',
+          type: 'bronze',
+          desc: 'Completa el capítulo V.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_TRAIDORES',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 15,
+          name: 'A la tercera va la vencida',
+          type: 'bronze',
+          desc: 'Completa "Adiós, querido amigo".',
+          video: 'https://www.youtube.com/embed/EXAMPLE_TERCERA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 16,
+          name: 'Vaquero constructor',
+          type: 'bronze',
+          desc: 'Completa "Una nueva Jerusalén".',
+          video: 'https://www.youtube.com/embed/EXAMPLE_VAQUERO',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 17,
+          name: 'Amistad con beneficios',
+          type: 'bronze',
+          desc: 'Completa una actividad con un compañero en cada campamento.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_AMISTAD',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 18,
+          name: 'Hobby Horse',
+          type: 'bronze',
+          desc: 'Juega todos los minijuegos.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_HOBBY',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 19,
+          name: 'Forzar y entrar',
+          type: 'bronze',
+          desc: 'Encuentra el botín de 4 haciendas o cabañas.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_FORZAR',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 20,
+          name: 'Inteligencia artificial',
+          type: 'bronze',
+          desc: 'Descubre el destino de Marko Dragić.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_IA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 21,
+          name: 'Quitárselo a los ricos',
+          type: 'bronze',
+          desc: 'Roba o saquea $250.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_RICOS',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 22,
+          name: 'Dárselo a los pobres',
+          type: 'bronze',
+          desc: 'Dona $250 a la caja de contribuciones de la banda.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_POBRES',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 23,
+          name: 'Pagar la cuenta',
+          type: 'bronze',
+          desc: 'Gasta $5000 en las tiendas.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CUENTA',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 24,
+          name: 'Personalidad extrema',
+          type: 'bronze',
+          desc: 'Consigue el nivel de honor máximo o mínimo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PERSONALIDAD',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 25,
+          name: 'Forastero del Oeste',
+          type: 'bronze',
+          desc: 'Completa 10 misiones de desconocidos.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_FORASTERO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 26,
+          name: 'Recompensado',
+          type: 'bronze',
+          desc: 'Sobrevive 3 días con una recompensa por tu cabeza de $250 en todos los estados.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_RECOMPENSADO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 27,
+          name: 'Presentar tus respetos',
+          type: 'bronze',
+          desc: 'Encuentra las tumbas de todos tus compañeros caídos.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_RESPETOS',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 28,
+          name: 'Chico de los recados',
+          type: 'bronze',
+          desc: 'Entrega 5 objetos solicitados por compañeros del campamento.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_RECADOS',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 29,
+          name: '¡He dicho que es arte!',
+          type: 'bronze',
+          desc: 'Encuentra un hogar permanente para la ardilla disecada.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ARTE',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 30,
+          name: 'Autosuficiente',
+          type: 'bronze',
+          desc: 'Elabora 30 objetos diferentes en el Modo Historia.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_AUTO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 31,
+          name: 'A flor de piel',
+          type: 'bronze',
+          desc: 'Despelleja a todas las especies de animales en el Modo Historia.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PIEL',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 32,
+          name: 'Zoólogo',
+          type: 'bronze',
+          desc: 'Estudia a todos los animales en todos los estados en el Modo Historia.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_ZOOLOGO',
+          completed: false,
+          difficulty: 'Difícil'
+        },
+        {
+          id: 33,
+          name: '¡Era ASÍ de grande!',
+          type: 'bronze',
+          desc: 'Captura un pez que pese al menos 16 libras (7.3 kg).',
+          video: 'https://www.youtube.com/embed/EXAMPLE_GRANDE',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 34,
+          name: 'Cargada y preparada',
+          type: 'bronze',
+          desc: 'Mejora todos los componentes disponibles de un arma corta o un arma larga.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CARGADA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 35,
+          name: 'Osado',
+          type: 'bronze',
+          desc: 'Sobrevive a 18 ataques de osos y mátalos en el Modo Historia.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_OSADO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 36,
+          name: 'Corcel de confianza',
+          type: 'bronze',
+          desc: 'Alcanza el máximo nivel de vínculo con un caballo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CORCEL',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 37,
+          name: 'Fuga',
+          type: 'bronze',
+          desc: 'Red Dead Online: Completa la introducción.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_FUGA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 38,
+          name: 'Experto en series',
+          type: 'bronze',
+          desc: 'Red Dead Online: Participa en una de las series.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_SERIES',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 39,
+          name: 'Mercenario',
+          type: 'bronze',
+          desc: 'Red Dead Online: Acepta 10 misiones del Modo Libre de personajes que encuentres por el mundo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MERCENARIO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 40,
+          name: 'Memorable',
+          type: 'bronze',
+          desc: 'Red Dead Online: Juega 5 eventos del Modo Libre.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MEMORABLE',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 41,
+          name: 'Abróchate el cinturón',
+          type: 'bronze',
+          desc: 'Red Dead Online: Consigue 5 hebillas de oro en premios.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CINTURON',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 42,
+          name: 'El mejor',
+          type: 'bronze',
+          desc: 'Red Dead Online: Sé MVP 3 veces en una partida con al menos 4 jugadores.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MVP',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 43,
+          name: 'Un puñado de caballos',
+          type: 'bronze',
+          desc: 'Red Dead Online: Consigue tener 5 caballos en propiedad al mismo tiempo.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_PUNADO',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 44,
+          name: 'Ponte en marcha',
+          type: 'bronze',
+          desc: 'Red Dead Online: Llega al nivel 10.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_MARCHA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 45,
+          name: 'Todo vale',
+          type: 'bronze',
+          desc: 'Red Dead Online: Impide que otra cuadrilla realice con éxito una misión del Modo Libre.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_VALE',
+          completed: false,
+          difficulty: 'Media'
+        },
+        {
+          id: 46,
+          name: 'Como en casa',
+          type: 'bronze',
+          desc: 'Red Dead Online: Compra 5 mejoras del campamento.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CASA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 47,
+          name: 'Sin regulación',
+          type: 'bronze',
+          desc: 'Red Dead Online: Crea 25 artículos de munición.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_REGULACION',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 48,
+          name: 'Entre amigos',
+          type: 'bronze',
+          desc: 'Red Dead Online: Forma una cuadrilla persistente.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_AMIGOS',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 49,
+          name: 'Maestro creador',
+          type: 'bronze',
+          desc: 'Red Dead Online: Juega una partida de nivel Featured Series.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_CREADOR',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 50,
+          name: 'Venta encarnizada',
+          type: 'bronze',
+          desc: 'Red Dead Online: Vende 20 objetos a los comerciantes.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_VENTA',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 51,
+          name: 'Recolección perfecta',
+          type: 'bronze',
+          desc: 'Red Dead Online: Recoge objetos del entorno 25 veces.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_RECOLECCION',
+          completed: false,
+          difficulty: 'Fácil'
+        },
+        {
+          id: 52,
+          name: 'La unión hace la fuerza',
+          type: 'bronze',
+          desc: 'Red Dead Online: Completa una misión del Modo Libre en una cuadrilla con al menos 2 miembros.',
+          video: 'https://www.youtube.com/embed/EXAMPLE_UNION',
+          completed: false,
+          difficulty: 'Fácil'
+        }
+      ]
   },
   {
     id: 'spider-man',
